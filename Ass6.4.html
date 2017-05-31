@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>For in loop</title>
+    <script>
+
+        var Employee = [
+             {
+                 name: 'William',
+                 age: 28,
+                 salary: 50000,
+                 city: "Chennai",
+                 state: "TamilNadu",
+                 pincode: 600000
+             },
+             {
+                 name: 'Alfie',
+                 age: 27,
+                 salary: 80000,
+                 city: "Bangalore",
+                 state: "TamilNadu",
+                 pincode: 560063
+             },
+             {
+                 name: 'George',
+                 age: 28,
+                 salary: 50000,
+                 city: "Delhi",
+                 state: "TamilNadu",
+                 pincode: 110001
+             },
+             {
+                 name: 'Harry',
+                 age: 28,
+                 salary: 70000,
+                 city: "Kerala",
+                 state: "TamilNadu",
+                 pincode: 690513
+             },
+             {
+                 name: 'Jack',
+                 age: 29,
+                 salary: 80000,
+                 city: "CBT",
+                 state: "TamilNadu",
+                 pincode: 641018
+             }
+        ];
+
+        var i = Employee.length - 1;
+        for (var item in Employee) {
+            console.log(item + " " + Employee[item].name + " Details");
+            for (var prop in Employee[item])
+            {
+                
+                console.log(prop + ':' + Employee[item][prop]);
+            }
+            
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
